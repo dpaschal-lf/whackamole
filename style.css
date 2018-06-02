@@ -1,0 +1,54 @@
+body {
+    background-image: url("images/background.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: 100vw; 
+    /* width: 100vw;    */
+}
+.gameboard{
+    width: 80vw; 
+}
+
+.container {
+    /* display: flex; */
+    width: 13%; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 200px;
+    width: 200px; 
+    position: relative;
+    top: 200px;
+    display: inline-block; 
+
+}
+
+.mole {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translateY(0);
+   transition-duration: .5s; 
+}
+
+/* .slide_animation {
+    animation-name: slide;
+    animation-duration: .5s;
+}
+
+@keyframes slide {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-200px)}
+    100% {transform: translateY(0)}
+} */
+
+.slide_animation {
+    transform: translateY(-100%);
+}
+
+.dirt {
+    height: 100%;
+    width: 100%;
+    background-image: url('images/pileofdirt.png');
+    background-size: 100vh;
+    background-position: center;
+    position: absolute;
+}
